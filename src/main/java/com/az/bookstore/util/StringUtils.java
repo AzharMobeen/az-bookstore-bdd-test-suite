@@ -7,7 +7,7 @@ public class StringUtils {
         int leftLimit = 97; // letter 'a'
         int rightLimit = 122; // letter 'z'
         int targetStringLength = 10;
-        Random random = new Random(20L);
+        Random random = new Random(System.nanoTime());
 
         return random.ints(leftLimit, rightLimit + 1)
                 .limit(targetStringLength)
